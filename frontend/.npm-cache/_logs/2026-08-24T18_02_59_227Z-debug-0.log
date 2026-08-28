@@ -1,0 +1,745 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.0
+2 info using node@v24.14.1
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\srija\Downloads\telemedicine-platform-phase2\telemedicine-platform\frontend\.npmrc
+5 silly config load:file:C:\Users\srija\.npmrc
+6 silly config load:file:C:\Users\srija\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".\\.npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\srija\Downloads\telemedicine-platform-phase2\telemedicine-platform\frontend\.npm-cache\_logs\2026-08-24T18_02_59_227Z-
+10 verbose logfile C:\Users\srija\Downloads\telemedicine-platform-phase2\telemedicine-platform\frontend\.npm-cache\_logs\2026-08-24T18_02_59_227Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly reify mark retired [
+14 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\browserslist'
+14 silly reify ]
+15 silly reify mark retired [
+15 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\caniuse-lite'
+15 silly reify ]
+16 silly reify mark retired [
+16 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\baseline-browser-mapping'
+16 silly reify ]
+17 silly reify mark retired [
+17 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\convert-source-map'
+17 silly reify ]
+18 silly reify mark retired [
+18 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\esbuild'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\debug'
+19 silly reify ]
+20 silly reify mark retired [
+20 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\electron-to-chromium'
+20 silly reify ]
+21 silly reify mark retired [
+21 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\gensync'
+21 silly reify ]
+22 silly reify mark retired [
+22 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\escalade'
+22 silly reify ]
+23 silly reify mark retired [
+23 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\js-tokens'
+23 silly reify ]
+24 silly reify mark retired [
+24 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\loose-envify'
+24 silly reify ]
+25 silly reify mark retired [
+25 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\json5'
+25 silly reify ]
+26 silly reify mark retired [
+26 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\ms'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\lru-cache'
+27 silly reify ]
+28 silly reify mark retired [
+28 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\jsesc'
+28 silly reify ]
+29 silly reify mark retired [
+29 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\nanoid'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\node-releases'
+30 silly reify ]
+31 silly reify mark retired [
+31 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\picocolors'
+31 silly reify ]
+32 silly reify mark retired [
+32 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\postcss'
+32 silly reify ]
+33 silly reify mark retired [
+33 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react'
+33 silly reify ]
+34 silly reify mark retired [
+34 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-refresh'
+34 silly reify ]
+35 silly reify mark retired [
+35 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-router'
+35 silly reify ]
+36 silly reify mark retired [
+36 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-router-dom'
+36 silly reify ]
+37 silly reify mark retired [
+37 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\scheduler'
+37 silly reify ]
+38 silly reify mark retired [
+38 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\rollup'
+38 silly reify ]
+39 silly reify mark retired [
+39 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-dom'
+39 silly reify ]
+40 silly reify mark retired [
+40 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\source-map-js'
+40 silly reify ]
+41 silly reify mark retired [
+41 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\semver'
+41 silly reify ]
+42 silly reify mark retired [
+42 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\update-browserslist-db'
+42 silly reify ]
+43 silly reify mark retired [
+43 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\vite'
+43 silly reify ]
+44 silly reify mark retired [
+44 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\code-frame'
+44 silly reify ]
+45 silly reify mark retired [
+45 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\yallist'
+45 silly reify ]
+46 silly reify mark retired [
+46 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\compat-data'
+46 silly reify ]
+47 silly reify mark retired [
+47 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\core'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\generator'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-compilation-targets'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-module-transforms'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-module-imports'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-globals'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-plugin-utils'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-string-parser'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-validator-identifier'
+55 silly reify ]
+56 silly reify mark retired [
+56 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-validator-option'
+56 silly reify ]
+57 silly reify mark retired [
+57 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helpers'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\parser'
+58 silly reify ]
+59 silly reify mark retired [
+59 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\plugin-transform-react-jsx-source'
+59 silly reify ]
+60 silly reify mark retired [
+60 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\plugin-transform-react-jsx-self'
+60 silly reify ]
+61 silly reify mark retired [
+61 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\types'
+61 silly reify ]
+62 silly reify mark retired [
+62 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@esbuild\\win32-x64'
+62 silly reify ]
+63 silly reify mark retired [
+63 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\gen-mapping'
+63 silly reify ]
+64 silly reify mark retired [
+64 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\traverse'
+64 silly reify ]
+65 silly reify mark retired [
+65 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\remapping'
+65 silly reify ]
+66 silly reify mark retired [
+66 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\resolve-uri'
+66 silly reify ]
+67 silly reify mark retired [
+67 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\template'
+67 silly reify ]
+68 silly reify mark retired [
+68 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@remix-run\\router'
+68 silly reify ]
+69 silly reify mark retired [
+69 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\trace-mapping'
+69 silly reify ]
+70 silly reify mark retired [
+70 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rollup\\rollup-win32-x64-gnu'
+70 silly reify ]
+71 silly reify mark retired [
+71 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rollup\\rollup-win32-x64-msvc'
+71 silly reify ]
+72 silly reify mark retired [
+72 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rolldown\\pluginutils'
+72 silly reify ]
+73 silly reify mark retired [
+73 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__core'
+73 silly reify ]
+74 silly reify mark retired [
+74 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\sourcemap-codec'
+74 silly reify ]
+75 silly reify mark retired [
+75 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__generator'
+75 silly reify ]
+76 silly reify mark retired [
+76 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@vitejs\\plugin-react'
+76 silly reify ]
+77 silly reify mark retired [
+77 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__traverse'
+77 silly reify ]
+78 silly reify mark retired [
+78 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__template'
+78 silly reify ]
+79 silly reify mark retired [
+79 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\estree'
+79 silly reify ]
+80 silly reify moves {
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\browserslist': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.browserslist-0ScNkhX9',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\caniuse-lite': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.caniuse-lite-hCWMQyev',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\baseline-browser-mapping': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.baseline-browser-mapping-BQItbaoj',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\convert-source-map': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.convert-source-map-XFGX3MlR',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\esbuild': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.esbuild-s78aUa3N',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\debug': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.debug-ow6m0t2x',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\electron-to-chromium': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.electron-to-chromium-c9bj4REt',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\gensync': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.gensync-grZMgTW1',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\escalade': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.escalade-Cg2ymVGK',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\js-tokens': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.js-tokens-E5G8CAaS',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\loose-envify': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.loose-envify-uGetaiJK',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\json5': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.json5-64Ud9GJJ',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\ms': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.ms-LxNTSMI6',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\lru-cache': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.lru-cache-AZYzqh7v',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\jsesc': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.jsesc-6Ot2Qs8M',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\nanoid': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.nanoid-OWhQZrgk',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\node-releases': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.node-releases-j6goT6d0',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\picocolors': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.picocolors-jmwztUpx',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\postcss': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.postcss-BWWcVrfW',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.react-2B3JDady',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-refresh': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.react-refresh-1kZVbZkj',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-router': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.react-router-B29M6IZE',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-router-dom': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.react-router-dom-jg9haXW2',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\scheduler': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.scheduler-L38wdRpT',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\rollup': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.rollup-ax4E3TE1',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\react-dom': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.react-dom-I4pPRhKP',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\source-map-js': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.source-map-js-RFZqIk6C',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\semver': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.semver-v1yGKvAP',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\update-browserslist-db': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.update-browserslist-db-713SyqnQ',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\vite': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.vite-O3OKXA4T',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\code-frame': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.code-frame-oMm5aGe0',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\yallist': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\.yallist-EYA9Zq9u',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\compat-data': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.compat-data-e298XNRy',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\core': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.core-Xqvk6ZsF',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\generator': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.generator-J1CCw6kE',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-compilation-targets': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-compilation-targets-lDvclMkY',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-module-transforms': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-module-transforms-29HafbP2',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-module-imports': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-module-imports-trV2v1i9',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-globals': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-globals-M4I5u3u1',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-plugin-utils': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-plugin-utils-1gEsAKcT',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-string-parser': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-string-parser-WJ4sWwUa',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-validator-identifier': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-validator-identifier-xJbnTAbw',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helper-validator-option': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helper-validator-option-bUYLT74c',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\helpers': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.helpers-Zqe3T8jw',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\parser': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.parser-tWxtmFOS',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\plugin-transform-react-jsx-source': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.plugin-transform-react-jsx-source-gEiVarfh',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\plugin-transform-react-jsx-self': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.plugin-transform-react-jsx-self-JZbCnHZl',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\types': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.types-yK8iLx7L',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@esbuild\\win32-x64': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@esbuild\\.win32-x64-ThXoKka0',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\gen-mapping': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\.gen-mapping-t4R9JHXY',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\traverse': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.traverse-DV5fw3yD',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\remapping': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\.remapping-tutzQt30',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\resolve-uri': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\.resolve-uri-P4yVb7bN',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\template': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@babel\\.template-T2lDedgn',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@remix-run\\router': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@remix-run\\.router-RqsZYSju',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\trace-mapping': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\.trace-mapping-ILsrDpHn',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rollup\\rollup-win32-x64-gnu': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rollup\\.rollup-win32-x64-gnu-bMZPJ9cm',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rollup\\rollup-win32-x64-msvc': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rollup\\.rollup-win32-x64-msvc-EKqBQR1M',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rolldown\\pluginutils': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@rolldown\\.pluginutils-8pS6dbEx',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__core': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\.babel__core-nLq6zDDL',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\sourcemap-codec': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@jridgewell\\.sourcemap-codec-UwHHg8RL',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__generator': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\.babel__generator-Rd8AdMl3',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@vitejs\\plugin-react': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@vitejs\\.plugin-react-dolQ5DEk',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__traverse': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\.babel__traverse-DBUDRms5',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\babel__template': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\.babel__template-foYifJ5u',
+80 silly reify   'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\estree': 'C:\\Users\\srija\\Downloads\\telemedicine-platform-phase2\\telemedicine-platform\\frontend\\node_modules\\@types\\.estree-HFNFVtK7'
+80 silly reify }
+81 silly audit bulk request {
+81 silly audit   '@babel/code-frame': [ '7.29.7' ],
+81 silly audit   '@babel/compat-data': [ '7.29.7' ],
+81 silly audit   '@babel/core': [ '7.29.7' ],
+81 silly audit   '@babel/generator': [ '7.29.8' ],
+81 silly audit   '@babel/helper-compilation-targets': [ '7.29.7' ],
+81 silly audit   '@babel/helper-globals': [ '7.29.7' ],
+81 silly audit   '@babel/helper-module-imports': [ '7.29.7' ],
+81 silly audit   '@babel/helper-module-transforms': [ '7.29.7' ],
+81 silly audit   '@babel/helper-plugin-utils': [ '7.29.7' ],
+81 silly audit   '@babel/helper-string-parser': [ '7.29.7' ],
+81 silly audit   '@babel/helper-validator-identifier': [ '7.29.7' ],
+81 silly audit   '@babel/helper-validator-option': [ '7.29.7' ],
+81 silly audit   '@babel/helpers': [ '7.29.7' ],
+81 silly audit   '@babel/parser': [ '7.29.8' ],
+81 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.29.7' ],
+81 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.29.7' ],
+81 silly audit   '@babel/template': [ '7.29.7' ],
+81 silly audit   '@babel/traverse': [ '7.29.8' ],
+81 silly audit   '@babel/types': [ '7.29.8' ],
+81 silly audit   '@esbuild/aix-ppc64': [ '0.21.5' ],
+81 silly audit   '@esbuild/android-arm': [ '0.21.5' ],
+81 silly audit   '@esbuild/android-arm64': [ '0.21.5' ],
+81 silly audit   '@esbuild/android-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/darwin-arm64': [ '0.21.5' ],
+81 silly audit   '@esbuild/darwin-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/freebsd-arm64': [ '0.21.5' ],
+81 silly audit   '@esbuild/freebsd-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-arm': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-arm64': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-ia32': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-loong64': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-mips64el': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-ppc64': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-riscv64': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-s390x': [ '0.21.5' ],
+81 silly audit   '@esbuild/linux-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/netbsd-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/openbsd-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/sunos-x64': [ '0.21.5' ],
+81 silly audit   '@esbuild/win32-arm64': [ '0.21.5' ],
+81 silly audit   '@esbuild/win32-ia32': [ '0.21.5' ],
+81 silly audit   '@esbuild/win32-x64': [ '0.21.5' ],
+81 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+81 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+81 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+81 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+81 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+81 silly audit   '@napi-rs/lzma-linux-x64-gnu': [ '1.5.1' ],
+81 silly audit   '@remix-run/router': [ '1.23.4' ],
+81 silly audit   '@rolldown/pluginutils': [ '1.0.0-beta.27' ],
+81 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-android-arm64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-darwin-arm64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-darwin-x64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-freebsd-x64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-openbsd-x64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.62.4' ],
+81 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.62.4' ],
+81 silly audit   '@types/babel__core': [ '7.20.5' ],
+81 silly audit   '@types/babel__generator': [ '7.27.0' ],
+81 silly audit   '@types/babel__template': [ '7.4.4' ],
+81 silly audit   '@types/babel__traverse': [ '7.28.0' ],
+81 silly audit   '@types/estree': [ '1.0.9' ],
+81 silly audit   '@vitejs/plugin-react': [ '4.7.0' ],
+81 silly audit   'baseline-browser-mapping': [ '2.11.15' ],
+81 silly audit   browserslist: [ '4.28.8' ],
+81 silly audit   'caniuse-lite': [ '1.0.30001809' ],
+81 silly audit   'convert-source-map': [ '2.0.0' ],
+81 silly audit   debug: [ '4.4.3' ],
+81 silly audit   'electron-to-chromium': [ '1.5.411' ],
+81 silly audit   esbuild: [ '0.21.5' ],
+81 silly audit   escalade: [ '3.2.0' ],
+81 silly audit   fsevents: [ '2.3.3' ],
+81 silly audit   gensync: [ '1.0.0-beta.2' ],
+81 silly audit   'js-tokens': [ '4.0.0' ],
+81 silly audit   jsesc: [ '3.1.0' ],
+81 silly audit   json5: [ '2.2.3' ],
+81 silly audit   'loose-envify': [ '1.4.0' ],
+81 silly audit   'lru-cache': [ '5.1.1' ],
+81 silly audit   ms: [ '2.1.3' ],
+81 silly audit   nanoid: [ '3.3.18' ],
+81 silly audit   'node-releases': [ '2.0.53' ],
+81 silly audit   picocolors: [ '1.1.1' ],
+81 silly audit   postcss: [ '8.5.26' ],
+81 silly audit   react: [ '18.3.1' ],
+81 silly audit   'react-dom': [ '18.3.1' ],
+81 silly audit   'react-refresh': [ '0.17.0' ],
+81 silly audit   'react-router': [ '6.30.6' ],
+81 silly audit   'react-router-dom': [ '6.30.6' ],
+81 silly audit   rollup: [ '4.62.4' ],
+81 silly audit   scheduler: [ '0.23.2' ],
+81 silly audit   semver: [ '6.3.1' ],
+81 silly audit   'source-map-js': [ '1.2.1' ],
+81 silly audit   'update-browserslist-db': [ '1.3.1' ],
+81 silly audit   vite: [ '5.4.21' ],
+81 silly audit   yallist: [ '3.1.1' ]
+81 silly audit }
+82 http cache @types/babel__template@https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.4.tgz 1ms (cache hit)
+83 http cache @types/estree@https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz 0ms (cache hit)
+84 http cache @types/babel__traverse@https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz 0ms (cache hit)
+85 http cache @types/babel__generator@https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.27.0.tgz 0ms (cache hit)
+86 http cache @jridgewell/sourcemap-codec@https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz 0ms (cache hit)
+87 http cache @types/babel__core@https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz 0ms (cache hit)
+88 http cache @rollup/rollup-win32-x64-gnu@https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.62.4.tgz 1ms (cache hit)
+89 http cache @rollup/rollup-win32-x64-msvc@https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.62.4.tgz 1ms (cache hit)
+90 http cache @vitejs/plugin-react@https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-4.7.0.tgz 0ms (cache hit)
+91 http cache @babel/traverse@https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.8.tgz 0ms (cache hit)
+92 http cache @rolldown/pluginutils@https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.27.tgz 0ms (cache hit)
+93 http cache @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 0ms (cache hit)
+94 http cache @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 0ms (cache hit)
+95 http cache @babel/template@https://registry.npmjs.org/@babel/template/-/template-7.29.7.tgz 0ms (cache hit)
+96 http cache @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 0ms (cache hit)
+97 http cache @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 0ms (cache hit)
+98 http cache @babel/types@https://registry.npmjs.org/@babel/types/-/types-7.29.8.tgz 0ms (cache hit)
+99 http cache @babel/plugin-transform-react-jsx-self@https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.29.7.tgz 0ms (cache hit)
+100 http cache @babel/plugin-transform-react-jsx-source@https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.29.7.tgz 0ms (cache hit)
+101 http cache @remix-run/router@https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz 0ms (cache hit)
+102 http cache @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz 0ms (cache hit)
+103 http cache @babel/helpers@https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.7.tgz 0ms (cache hit)
+104 http cache @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.29.8.tgz 0ms (cache hit)
+105 http cache @babel/helper-string-parser@https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.29.7.tgz 0ms (cache hit)
+106 http cache @babel/helper-validator-identifier@https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz 0ms (cache hit)
+107 http cache @babel/helper-validator-option@https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.29.7.tgz 0ms (cache hit)
+108 http cache @babel/helper-module-imports@https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.29.7.tgz 0ms (cache hit)
+109 http cache @babel/core@https://registry.npmjs.org/@babel/core/-/core-7.29.7.tgz 0ms (cache hit)
+110 http cache @babel/helper-globals@https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.29.7.tgz 0ms (cache hit)
+111 http cache @babel/helper-module-transforms@https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.29.7.tgz 0ms (cache hit)
+112 http cache @babel/helper-compilation-targets@https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.29.7.tgz 0ms (cache hit)
+113 http cache @babel/helper-plugin-utils@https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.29.7.tgz 0ms (cache hit)
+114 http cache vite@https://registry.npmjs.org/vite/-/vite-5.4.21.tgz 0ms (cache hit)
+115 http cache @babel/code-frame@https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.7.tgz 0ms (cache hit)
+116 http cache @babel/generator@https://registry.npmjs.org/@babel/generator/-/generator-7.29.8.tgz 0ms (cache hit)
+117 http cache update-browserslist-db@https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.1.tgz 0ms (cache hit)
+118 http cache @babel/compat-data@https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.29.7.tgz 0ms (cache hit)
+119 http cache yallist@https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz 0ms (cache hit)
+120 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz 0ms (cache hit)
+121 http cache source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 0ms (cache hit)
+122 http cache semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 0ms (cache hit)
+123 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz 0ms (cache hit)
+124 http cache rollup@https://registry.npmjs.org/rollup/-/rollup-4.62.4.tgz 0ms (cache hit)
+125 http cache react@https://registry.npmjs.org/react/-/react-18.3.1.tgz 0ms (cache hit)
+126 http cache react-router-dom@https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.6.tgz 0ms (cache hit)
+127 http cache picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 0ms (cache hit)
+128 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz 0ms (cache hit)
+129 http cache react-router@https://registry.npmjs.org/react-router/-/react-router-6.30.6.tgz 0ms (cache hit)
+130 http cache node-releases@https://registry.npmjs.org/node-releases/-/node-releases-2.0.53.tgz 0ms (cache hit)
+131 http cache react-refresh@https://registry.npmjs.org/react-refresh/-/react-refresh-0.17.0.tgz 0ms (cache hit)
+132 http cache jsesc@https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz 0ms (cache hit)
+133 http cache escalade@https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz 0ms (cache hit)
+134 http cache ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 0ms (cache hit)
+135 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz 0ms (cache hit)
+136 http cache json5@https://registry.npmjs.org/json5/-/json5-2.2.3.tgz 0ms (cache hit)
+137 http cache lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz 0ms (cache hit)
+138 http cache electron-to-chromium@https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.411.tgz 0ms (cache hit)
+139 http cache loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 0ms (cache hit)
+140 http cache js-tokens@https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz 0ms (cache hit)
+141 http cache debug@https://registry.npmjs.org/debug/-/debug-4.4.3.tgz 0ms (cache hit)
+142 http cache convert-source-map@https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz 0ms (cache hit)
+143 http cache gensync@https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz 0ms (cache hit)
+144 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz 0ms (cache hit)
+145 http cache browserslist@https://registry.npmjs.org/browserslist/-/browserslist-4.28.8.tgz 0ms (cache hit)
+146 silly tarball no local data for @types/babel__template@https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.4.tgz. Extracting by manifest.
+147 silly tarball no local data for @types/estree@https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz. Extracting by manifest.
+148 silly tarball no local data for @types/babel__traverse@https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz. Extracting by manifest.
+149 silly tarball no local data for @types/babel__generator@https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.27.0.tgz. Extracting by manifest.
+150 silly tarball no local data for @jridgewell/sourcemap-codec@https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz. Extracting by manifest.
+151 silly tarball no local data for @types/babel__core@https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz. Extracting by manifest.
+152 http cache caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001809.tgz 0ms (cache hit)
+153 http cache baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.15.tgz 0ms (cache hit)
+154 silly tarball no local data for @rollup/rollup-win32-x64-gnu@https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.62.4.tgz. Extracting by manifest.
+155 silly tarball no local data for @rollup/rollup-win32-x64-msvc@https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.62.4.tgz. Extracting by manifest.
+156 silly tarball no local data for @vitejs/plugin-react@https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-4.7.0.tgz. Extracting by manifest.
+157 silly tarball no local data for @babel/traverse@https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.8.tgz. Extracting by manifest.
+158 silly tarball no local data for @rolldown/pluginutils@https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.27.tgz. Extracting by manifest.
+159 silly tarball no local data for @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz. Extracting by manifest.
+160 silly tarball no local data for @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz. Extracting by manifest.
+161 silly tarball no local data for @babel/template@https://registry.npmjs.org/@babel/template/-/template-7.29.7.tgz. Extracting by manifest.
+162 silly tarball no local data for @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz. Extracting by manifest.
+163 silly tarball no local data for @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz. Extracting by manifest.
+164 silly tarball no local data for @babel/types@https://registry.npmjs.org/@babel/types/-/types-7.29.8.tgz. Extracting by manifest.
+165 silly tarball no local data for @babel/plugin-transform-react-jsx-self@https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.29.7.tgz. Extracting by manifest.
+166 silly tarball no local data for @babel/plugin-transform-react-jsx-source@https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.29.7.tgz. Extracting by manifest.
+167 silly tarball no local data for @remix-run/router@https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz. Extracting by manifest.
+168 silly tarball no local data for @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz. Extracting by manifest.
+169 silly tarball no local data for @babel/helpers@https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.7.tgz. Extracting by manifest.
+170 silly tarball no local data for @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.29.8.tgz. Extracting by manifest.
+171 silly tarball no local data for @babel/helper-string-parser@https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.29.7.tgz. Extracting by manifest.
+172 silly tarball no local data for @babel/helper-validator-identifier@https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz. Extracting by manifest.
+173 silly tarball no local data for @babel/helper-validator-option@https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.29.7.tgz. Extracting by manifest.
+174 silly tarball no local data for @babel/helper-module-imports@https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.29.7.tgz. Extracting by manifest.
+175 silly tarball no local data for @babel/core@https://registry.npmjs.org/@babel/core/-/core-7.29.7.tgz. Extracting by manifest.
+176 silly tarball no local data for @babel/helper-globals@https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.29.7.tgz. Extracting by manifest.
+177 silly tarball no local data for @babel/helper-module-transforms@https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.29.7.tgz. Extracting by manifest.
+178 silly tarball no local data for @babel/helper-compilation-targets@https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.29.7.tgz. Extracting by manifest.
+179 silly tarball no local data for @babel/helper-plugin-utils@https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.29.7.tgz. Extracting by manifest.
+180 silly tarball no local data for vite@https://registry.npmjs.org/vite/-/vite-5.4.21.tgz. Extracting by manifest.
+181 silly tarball no local data for @babel/code-frame@https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.7.tgz. Extracting by manifest.
+182 silly tarball no local data for @babel/generator@https://registry.npmjs.org/@babel/generator/-/generator-7.29.8.tgz. Extracting by manifest.
+183 silly tarball no local data for update-browserslist-db@https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.1.tgz. Extracting by manifest.
+184 silly tarball no local data for @babel/compat-data@https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.29.7.tgz. Extracting by manifest.
+185 silly tarball no local data for yallist@https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz. Extracting by manifest.
+186 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz. Extracting by manifest.
+187 silly tarball no local data for source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz. Extracting by manifest.
+188 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz. Extracting by manifest.
+189 silly tarball no local data for scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz. Extracting by manifest.
+190 silly tarball no local data for rollup@https://registry.npmjs.org/rollup/-/rollup-4.62.4.tgz. Extracting by manifest.
+191 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-18.3.1.tgz. Extracting by manifest.
+192 silly tarball no local data for react-router-dom@https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.6.tgz. Extracting by manifest.
+193 silly tarball no local data for picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz. Extracting by manifest.
+194 silly tarball no local data for postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz. Extracting by manifest.
+195 silly tarball no local data for react-router@https://registry.npmjs.org/react-router/-/react-router-6.30.6.tgz. Extracting by manifest.
+196 silly tarball no local data for node-releases@https://registry.npmjs.org/node-releases/-/node-releases-2.0.53.tgz. Extracting by manifest.
+197 silly tarball no local data for react-refresh@https://registry.npmjs.org/react-refresh/-/react-refresh-0.17.0.tgz. Extracting by manifest.
+198 silly tarball no local data for jsesc@https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz. Extracting by manifest.
+199 silly tarball no local data for escalade@https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz. Extracting by manifest.
+200 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz. Extracting by manifest.
+201 silly tarball no local data for nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz. Extracting by manifest.
+202 silly tarball no local data for json5@https://registry.npmjs.org/json5/-/json5-2.2.3.tgz. Extracting by manifest.
+203 silly tarball no local data for lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz. Extracting by manifest.
+204 silly tarball no local data for electron-to-chromium@https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.411.tgz. Extracting by manifest.
+205 silly tarball no local data for loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz. Extracting by manifest.
+206 silly tarball no local data for js-tokens@https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz. Extracting by manifest.
+207 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-4.4.3.tgz. Extracting by manifest.
+208 silly tarball no local data for convert-source-map@https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz. Extracting by manifest.
+209 silly tarball no local data for gensync@https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz. Extracting by manifest.
+210 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz. Extracting by manifest.
+211 silly tarball no local data for browserslist@https://registry.npmjs.org/browserslist/-/browserslist-4.28.8.tgz. Extracting by manifest.
+212 silly tarball no local data for caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001809.tgz. Extracting by manifest.
+213 silly tarball no local data for baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.15.tgz. Extracting by manifest.
+214 http fetch GET 200 https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.27.0.tgz 654ms (cache miss)
+215 http fetch GET 200 https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.4.tgz 660ms (cache miss)
+216 http fetch GET 200 https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz 702ms (cache miss)
+217 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 818ms
+218 silly audit report {
+218 silly audit report   esbuild: [
+218 silly audit report     {
+218 silly audit report       id: 1102341,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+218 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '<=0.24.2',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ],
+218 silly audit report   'react-router': [
+218 silly audit report     {
+218 silly audit report       id: 1124268,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-wrjc-x8rr-h8h6',
+218 silly audit report       title: 'React Router: Open redirect via backslash in <Link> and useNavigate (CVE-2025-68470 bypass)',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '>=6.0.0 <7.18.0',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     },
+218 silly audit report     {
+218 silly audit report       id: 1124272,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-337j-9hxr-rhxg',
+218 silly audit report       title: 'React Router: Arbitrary Constructor Injection via deserializeErrors() in React Router SSR Hydration',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '>=6.4.0 <7.18.0',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ],
+218 silly audit report   vite: [
+218 silly audit report     {
+218 silly audit report       id: 1120784,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-v6wh-96g9-6wx3',
+218 silly audit report       title: 'launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '<=6.4.2',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     },
+218 silly audit report     {
+218 silly audit report       id: 1116229,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-4w7w-66w2-5vf9',
+218 silly audit report       title: 'Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '<=6.4.1',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     },
+218 silly audit report     {
+218 silly audit report       id: 1123525,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-fx2h-pf6j-xcff',
+218 silly audit report       title: 'vite: `server.fs.deny` bypass on Windows alternate paths',
+218 silly audit report       severity: 'high',
+218 silly audit report       vulnerable_versions: '<=6.4.2',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ]
+218 silly audit report }
+219 silly packumentCache corgi:https://registry.npmjs.org/esbuild cache-miss
+220 silly packumentCache corgi:https://registry.npmjs.org/react-router cache-miss
+221 silly packumentCache corgi:https://registry.npmjs.org/vite cache-miss
+222 http fetch GET 200 https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 788ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.29.7.tgz 792ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.29.7.tgz 815ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz 868ms (cache miss)
+226 http fetch GET 200 https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz 887ms (cache miss)
+227 http fetch GET 200 https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.27.tgz 886ms (cache miss)
+228 http fetch GET 200 https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-4.7.0.tgz 1033ms (cache miss)
+229 http fetch GET 200 https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.29.7.tgz 1103ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.29.7.tgz 1109ms (cache miss)
+231 http fetch GET 200 https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.29.7.tgz 1115ms (cache miss)
+232 http fetch GET 200 https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz 1171ms (cache miss)
+233 http fetch GET 200 https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.29.7.tgz 1201ms (cache miss)
+234 http fetch GET 200 https://registry.npmjs.org/@babel/template/-/template-7.29.7.tgz 1245ms (cache miss)
+235 http fetch GET 200 https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz 1296ms (cache miss)
+236 http fetch GET 200 https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.29.7.tgz 1328ms (cache miss)
+237 http fetch GET 200 https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 1344ms (cache miss)
+238 http fetch GET 200 https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.29.7.tgz 1361ms (cache miss)
+239 http fetch GET 200 https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 1371ms (cache miss)
+240 http fetch GET 200 https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 1443ms (cache miss)
+241 http fetch GET 200 https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.8.tgz 1582ms (cache miss)
+242 http fetch GET 200 https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.1.tgz 1725ms (cache miss)
+243 http fetch GET 200 https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz 1814ms (cache miss)
+244 http fetch GET 200 https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.7.tgz 1861ms (cache miss)
+245 http fetch GET 200 https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.29.7.tgz 1956ms (cache miss)
+246 http fetch GET 200 https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.29.7.tgz 1966ms (cache miss)
+247 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 2136ms (cache miss)
+248 http fetch GET 200 https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 2168ms (cache miss)
+249 http fetch GET 200 https://registry.npmjs.org/@babel/generator/-/generator-7.29.8.tgz 2253ms (cache miss)
+250 http fetch GET 200 https://registry.npmjs.org/@babel/types/-/types-7.29.8.tgz 2283ms (cache miss)
+251 http fetch GET 200 https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz 2327ms (cache miss)
+252 http fetch GET 200 https://registry.npmjs.org/@babel/core/-/core-7.29.7.tgz 2338ms (cache miss)
+253 http fetch GET 200 https://registry.npmjs.org/react/-/react-18.3.1.tgz 2341ms (cache miss)
+254 http fetch GET 200 https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 2371ms (cache miss)
+255 http fetch GET 200 https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz 2467ms (cache miss)
+256 http fetch GET 200 https://registry.npmjs.org/node-releases/-/node-releases-2.0.53.tgz 2516ms (cache miss)
+257 http fetch GET 200 https://registry.npmjs.org/react-refresh/-/react-refresh-0.17.0.tgz 2582ms (cache miss)
+258 http fetch GET 200 https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz 2732ms (cache miss)
+259 http fetch GET 200 https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.7.tgz 2822ms (cache miss)
+260 http fetch GET 200 https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz 2837ms (cache miss)
+261 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 2939ms (cache miss)
+262 http fetch GET 200 https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz 3018ms (cache miss)
+263 http fetch GET 200 https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz 3084ms (cache miss)
+264 http fetch GET 200 https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz 3163ms (cache miss)
+265 http fetch GET 200 https://registry.npmjs.org/json5/-/json5-2.2.3.tgz 3199ms (cache miss)
+266 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.62.4.tgz 3253ms (cache miss)
+267 http fetch GET 200 https://registry.npmjs.org/@babel/parser/-/parser-7.29.8.tgz 3257ms (cache miss)
+268 http fetch GET 200 https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 3256ms (cache miss)
+269 http fetch GET 200 https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.411.tgz 3290ms (cache miss)
+270 http fetch GET 200 https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz 3290ms (cache miss)
+271 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-4.4.3.tgz 3337ms (cache miss)
+272 http fetch GET 200 https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz 3374ms (cache miss)
+273 http fetch GET 200 https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz 3379ms (cache miss)
+274 http fetch GET 200 https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.6.tgz 3526ms (cache miss)
+275 http fetch GET 200 https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.15.tgz 3538ms (cache miss)
+276 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz 3585ms (cache miss)
+277 http fetch GET 200 https://registry.npmjs.org/react-router/-/react-router-6.30.6.tgz 3617ms (cache miss)
+278 http fetch GET 200 https://registry.npmjs.org/browserslist/-/browserslist-4.28.8.tgz 3665ms (cache miss)
+279 http fetch GET 200 https://registry.npmjs.org/rollup/-/rollup-4.62.4.tgz 4193ms (cache miss)
+280 http fetch GET 200 https://registry.npmjs.org/vite/-/vite-5.4.21.tgz 4380ms (cache miss)
+281 http fetch GET 200 https://registry.npmjs.org/esbuild 3795ms (cache miss)
+282 silly packumentCache corgi:https://registry.npmjs.org/esbuild set size:undefined disposed:false
+283 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.62.4.tgz 4680ms (cache miss)
+284 http fetch GET 200 https://registry.npmjs.org/react-router 3979ms (cache miss)
+285 silly packumentCache corgi:https://registry.npmjs.org/react-router set size:undefined disposed:false
+286 http fetch GET 200 https://registry.npmjs.org/vite 4080ms (cache miss)
+287 silly packumentCache corgi:https://registry.npmjs.org/vite set size:undefined disposed:false
+288 silly packumentCache corgi:https://registry.npmjs.org/react-router-dom cache-miss
+289 http fetch GET 200 https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz 5183ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/react-router-dom 317ms (cache miss)
+291 silly packumentCache corgi:https://registry.npmjs.org/react-router-dom set size:undefined disposed:false
+292 silly packumentCache corgi:https://registry.npmjs.org/@vitejs%2fplugin-react cache-miss
+293 http fetch GET 200 https://registry.npmjs.org/@vitejs%2fplugin-react 114ms (cache miss)
+294 silly packumentCache corgi:https://registry.npmjs.org/@vitejs%2fplugin-react set size:undefined disposed:false
+295 http fetch GET 200 https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001809.tgz 6979ms (cache miss)
+296 http fetch GET 200 https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz 7722ms (cache miss)
+297 info run esbuild@0.21.5 postinstall node_modules/esbuild node install.js
+298 info run esbuild@0.21.5 postinstall { code: 0, signal: null }
+299 silly CHANGE node_modules/@types/estree
+300 silly CHANGE node_modules/@types/babel__template
+301 silly CHANGE node_modules/@types/babel__traverse
+302 silly CHANGE node_modules/@vitejs/plugin-react
+303 silly CHANGE node_modules/@types/babel__generator
+304 silly CHANGE node_modules/@jridgewell/sourcemap-codec
+305 silly CHANGE node_modules/@types/babel__core
+306 silly CHANGE node_modules/@rolldown/pluginutils
+307 silly CHANGE node_modules/@rollup/rollup-win32-x64-msvc
+308 silly CHANGE node_modules/@rollup/rollup-win32-x64-gnu
+309 silly CHANGE node_modules/@jridgewell/trace-mapping
+310 silly CHANGE node_modules/@remix-run/router
+311 silly CHANGE node_modules/@babel/template
+312 silly CHANGE node_modules/@jridgewell/resolve-uri
+313 silly CHANGE node_modules/@jridgewell/remapping
+314 silly CHANGE node_modules/@babel/traverse
+315 silly CHANGE node_modules/@jridgewell/gen-mapping
+316 silly CHANGE node_modules/@esbuild/win32-x64
+317 silly CHANGE node_modules/@babel/types
+318 silly CHANGE node_modules/@babel/plugin-transform-react-jsx-self
+319 silly CHANGE node_modules/@babel/plugin-transform-react-jsx-source
+320 silly CHANGE node_modules/@babel/parser
+321 silly CHANGE node_modules/@babel/helpers
+322 silly CHANGE node_modules/@babel/helper-validator-option
+323 silly CHANGE node_modules/@babel/helper-validator-identifier
+324 silly CHANGE node_modules/@babel/helper-string-parser
+325 silly CHANGE node_modules/@babel/helper-plugin-utils
+326 silly CHANGE node_modules/@babel/helper-globals
+327 silly CHANGE node_modules/@babel/helper-module-imports
+328 silly CHANGE node_modules/@babel/helper-module-transforms
+329 silly CHANGE node_modules/@babel/helper-compilation-targets
+330 silly CHANGE node_modules/@babel/generator
+331 silly CHANGE node_modules/@babel/core
+332 silly CHANGE node_modules/@babel/compat-data
+333 silly CHANGE node_modules/yallist
+334 silly CHANGE node_modules/@babel/code-frame
+335 silly CHANGE node_modules/vite
+336 silly CHANGE node_modules/update-browserslist-db
+337 silly CHANGE node_modules/semver
+338 silly CHANGE node_modules/source-map-js
+339 silly CHANGE node_modules/react-dom
+340 silly CHANGE node_modules/rollup
+341 silly CHANGE node_modules/scheduler
+342 silly CHANGE node_modules/react-router-dom
+343 silly CHANGE node_modules/react-router
+344 silly CHANGE node_modules/react-refresh
+345 silly CHANGE node_modules/react
+346 silly CHANGE node_modules/postcss
+347 silly CHANGE node_modules/picocolors
+348 silly CHANGE node_modules/node-releases
+349 silly CHANGE node_modules/nanoid
+350 silly CHANGE node_modules/jsesc
+351 silly CHANGE node_modules/lru-cache
+352 silly CHANGE node_modules/ms
+353 silly CHANGE node_modules/json5
+354 silly CHANGE node_modules/loose-envify
+355 silly CHANGE node_modules/js-tokens
+356 silly CHANGE node_modules/escalade
+357 silly CHANGE node_modules/gensync
+358 silly CHANGE node_modules/electron-to-chromium
+359 silly CHANGE node_modules/debug
+360 silly CHANGE node_modules/esbuild
+361 silly CHANGE node_modules/convert-source-map
+362 silly CHANGE node_modules/baseline-browser-mapping
+363 silly CHANGE node_modules/caniuse-lite
+364 silly CHANGE node_modules/browserslist
+365 verbose cwd C:\Users\srija\Downloads\telemedicine-platform-phase2\telemedicine-platform\frontend
+366 verbose os Windows_NT 10.0.26200
+367 verbose node v24.14.1
+368 verbose npm  v11.11.0
+369 verbose exit 0
+370 info ok

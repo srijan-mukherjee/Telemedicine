@@ -1,0 +1,18 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.35
+alembic==1.13.2
+psycopg[binary]==3.2.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# Phase 2 - authentication
+bcrypt==4.2.0
+pyjwt==2.9.0
+python-multipart==0.0.9   # required by OAuth2PasswordRequestForm (login form parsing)
+email-validator==2.2.0    # required by Pydantic EmailStr
+
+# Added in later phases (kept here so the file only needs light edits):
+# pgvector==0.3.4             # Phase 9 - vector embeddings
+# reportlab==4.2.2            # Phase 7 - prescription PDFs
