@@ -10,3 +10,4 @@ from app.models.patient_profile import PatientProfile  # noqa: F401
 from app.models.doctor_profile import DoctorProfile  # noqa: F401
 from app.models.doctor_availability import DoctorAvailability  # noqa: F401
 from app.models.specialty import Specialty  # noqa: F401
+from app.models.prescription import Prescription, PrescriptionItem

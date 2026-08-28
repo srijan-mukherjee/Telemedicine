@@ -17,6 +17,7 @@ from app.models.enums import UserRole
 from app.models.patient_profile import PatientProfile
 from app.models.user import User
 
+
 # Legal doctor-driven transitions.
 DOCTOR_TRANSITIONS = {
     AppointmentStatus.PENDING: {AppointmentStatus.CONFIRMED},

@@ -12,7 +12,8 @@ bcrypt==4.2.0
 pyjwt==2.9.0
 python-multipart==0.0.9   # required by OAuth2PasswordRequestForm (login form parsing)
 email-validator==2.2.0    # required by Pydantic EmailStr
+reportlab==4.2.2            # phase 7
 
 # Added in later phases (kept here so the file only needs light edits):
 # pgvector==0.3.4             # Phase 9 - vector embeddings
-# reportlab==4.2.2            # Phase 7 - prescription PDFs
+
