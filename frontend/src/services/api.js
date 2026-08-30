@@ -1,7 +1,7 @@
 // Thin fetch wrapper for the backend API.
 // Attaches the JWT (if present) and centralizes 401 handling.
 
-const API_PREFIX = "/api/v1";
+export const API_PREFIX = "/api/v1";
 const TOKEN_KEY = "telemedicine_token";
 
 export function getToken() {
@@ -53,4 +53,23 @@ export const apiPost = (path, body) => request("POST", path, { body });
 export const apiPostForm = (path, formBody) => request("POST", path, { body: formBody, isForm: true });
 export const apiPatch = (path, body) => request("PATCH", path, { body });
 export const apiDelete = (path) => request("DELETE", path);
+export const apiPut = (path, body) => request("PUT", path, { body });
+export const getAdminUsers = () => apiGet("/admin/users");
+export const setUserActive = (id, isActive) =>
+  apiPatch(`/admin/users/${id}/active`, { is_active: isActive });
+export const getAdminDoctors = () => apiGet("/admin/doctors");
+export const setDoctorStatus = (id, status) =>
+  apiPatch(`/admin/doctors/${id}/status`, { status });
+export const getAdminAppointments = (params) => {
+  const qs = new URLSearchParams(
+    Object.entries(params || {}).filter(([, v]) => v != null && v !== "")
+  ).toString();
+  return apiGet(qs ? "/admin/appointments?" + qs : "/admin/appointments");
+};
+
+export const getAdminAnalytics = () => apiGet("/admin/analytics");
+export const getAuditLogs = () => apiGet("/admin/audit-logs");
+
+
+
 

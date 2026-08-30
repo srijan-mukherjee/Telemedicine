@@ -169,6 +169,7 @@ export default function DoctorDashboardPage() {
                     <AppointmentCard
                       key={a.id}
                       appointment={a}
+                      role="doctor"
                       onUpdated={() => refresh()} // re-fetch so stats stay in sync
                       onError={(m) => setError(m)}
                     />
@@ -213,6 +214,7 @@ export default function DoctorDashboardPage() {
                     <AppointmentCard
                       key={a.id}
                       appointment={a}
+                      role="doctor"
                       onUpdated={() => openHistory(historyFor)} // keep history fresh after actions
                       onError={(m) => setError(m)}
                     />

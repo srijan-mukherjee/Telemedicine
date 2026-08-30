@@ -1,5 +1,7 @@
 import StatusBadge from "./StatusBadge";
 import { updateAppointmentStatus } from "../services/doctorPanelService";
+import PrescriptionForm from "./PrescriptionForm.jsx";
+import PrescriptionView from "./PrescriptionView.jsx";
 
 // Which action buttons to show per current status.
 const NEXT_ACTIONS = {
@@ -12,8 +14,9 @@ const NEXT_ACTIONS = {
   IN_CONSULTATION: [{ label: "Complete", next: "COMPLETED" }],
 };
 const CAN_CANCEL = ["PENDING", "CONFIRMED"];
+const CAN_PRESCRIBE = ["IN_CONSULTATION", "COMPLETED"];
 
-export default function AppointmentCard({ appointment, onUpdated, onError }) {
+export default function AppointmentCard({ appointment, role, onUpdated, onError }) {
   async function handleAction(next) {
     if (next === "CANCELLED" && !window.confirm("Cancel this appointment?")) return;
     try {
@@ -35,9 +38,9 @@ export default function AppointmentCard({ appointment, onUpdated, onError }) {
       <StatusBadge status={appointment.status} />
       <p>
         <b>{appointment.patient_name}</b>
-            {appointment.patient_age != null && <> · {appointment.patient_age} yrs</>}
-            {appointment.patient_blood_group && <> · Blood group: {appointment.patient_blood_group}</>}
-        </p>
+        {appointment.patient_age != null && <> · {appointment.patient_age} yrs</>}
+        {appointment.patient_blood_group && <> · Blood group: {appointment.patient_blood_group}</>}
+      </p>
 
       {appointment.reason_text && <p className="appt-reason">“{appointment.reason_text}”</p>}
       <p className="appt-ref">Ref: {appointment.reference_number}</p>
@@ -51,6 +54,20 @@ export default function AppointmentCard({ appointment, onUpdated, onError }) {
         <button onClick={() => handleAction("CANCELLED")} className="btn btn-danger">
           Cancel
         </button>
+      )}
+
+      {/* doctor: write / edit prescription */}
+      {role === "doctor" && CAN_PRESCRIBE.includes(appointment.status) && (
+        <PrescriptionForm
+          appointmentId={appointment.id}
+          onError={onError}
+          onSaved={onUpdated}
+        />
+      )}
+
+      {/* patient: view + PDF download */}
+      {role === "patient" && CAN_PRESCRIBE.includes(appointment.status) && (
+        <PrescriptionView appointmentId={appointment.id} onError={onError} />
       )}
     </div>
   );

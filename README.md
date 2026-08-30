@@ -198,3 +198,29 @@ telemedicine-platform/
 - Passwords are always hashed (bcrypt, from Phase 2)
 - Secrets live in `.env`, never in source
 - Each phase must leave the app runnable end-to-end
+
+### Features
+
+- **Auth & profiles** — JWT login, patient/doctor roles, change password
+- **Appointments** — booking with double-booking prevention, status lifecycle
+  (PENDING → CONFIRMED → WAITING → IN_CONSULTATION → COMPLETED, or CANCELLED)
+- **Prescriptions** — doctors create/edit prescriptions with multiple medicines;
+  patients view them and download **PDF prescriptions**
+- **Doctor tools** — today's dashboard with live stats, patient history, availability management
+- **Patient tools** — doctor search by name/specialty, my appointments, medical history
+- Admin panel: doctor approval workflow, user management, platform
+  analytics, and a complete audit trail of admin actions
+
+
+### API (base: `/api/v1`)
+
+| Area | Endpoints |
+|---|---|
+| Auth | `POST /auth/register`, `POST /auth/login`, `GET /auth/me`, `PATCH /auth/password` |
+| Doctors | `GET /doctors/search`, `GET /doctors/me`, `PATCH /doctors/me` |
+| Availability | `GET/POST/DELETE /availability` |
+| Appointments | `POST /appointments`, `GET /appointments/me`, `PATCH /appointments/{id}/status`, `GET /appointments/today`, `GET /appointments/stats/today`, `GET /appointments/patients`, `GET /appointments/patients/{id}/history` |
+| Prescriptions | `POST/PUT/GET /prescriptions/appointment/{id}`, `GET /prescriptions/me`, `GET /prescriptions/appointment/{id}/pdf` |
+| Health | `GET /health` |
+- `/api/v1/admin` — admin-only: doctors, users, appointments, analytics, audit-logs
+
