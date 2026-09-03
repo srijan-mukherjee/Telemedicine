@@ -10,18 +10,23 @@ import RegisterPage from "./pages/RegisterPage.jsx";
 import DoctorProfile from './pages/DoctorProfile';
 import MyAppointments from './pages/MyAppointments';
 import DoctorsList from './pages/DoctorsList';
+import SymptomChecker from "./pages/SymptomChecker";
+
+
 
 
 
 export default function App() {
   return (
     <Routes>
+      
       <Route path="/" element={<RootRedirect />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/doctor/:id" element={<DoctorProfile />} />
       <Route path="/my-appointments" element={<MyAppointments />} />
       <Route path="/doctors" element={<DoctorsList />} />
+      <Route path="/symptom-checker" element={<SymptomChecker />} />
       <Route
         path="/patient"
         element={
@@ -48,6 +53,8 @@ export default function App() {
         }
       />
     </Routes>
+    
+    
   );
 }
 

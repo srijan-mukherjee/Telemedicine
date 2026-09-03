@@ -18,8 +18,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.env
 
 # Virtual environments
 venv/
 .venv/
-env
+backend/.env

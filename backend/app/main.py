@@ -16,7 +16,7 @@ from app.routers import appointments, auth, availability, doctors, health, speci
 from app.routers import doctor_panel          # ← add
 from app.routers import auth, availability, doctors, health, specialties, users, prescriptions
 from app.routers import admin
-
+from app.routers.ai_chat import router as ai_chat_router  
 
 
 
@@ -47,6 +47,8 @@ app.include_router(appointments.router, prefix=settings.api_v1_prefix)
 app.include_router(doctor_panel.router, prefix=settings.api_v1_prefix)  
 app.include_router(prescriptions.router, prefix=settings.api_v1_prefix)
 app.include_router(admin.router, prefix=settings.api_v1_prefix)
+app.include_router(ai_chat_router, prefix=settings.api_v1_prefix)                       
+
 
 
 

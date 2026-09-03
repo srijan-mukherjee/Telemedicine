@@ -28,6 +28,13 @@ class Settings(BaseSettings):
     # ---- CORS ----
     frontend_origin: str = "http://localhost:5173"
 
+        # ---- AI (Phase 9) ----
+    groq_api_key: str = ""
+    ai_chat_model: str = "openai/gpt-oss-120b"
+    embedding_model: str = "all-MiniLM-L6-v2"
+    embedding_dim: int = 384
+
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

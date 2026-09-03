@@ -12,3 +12,5 @@ from app.models.doctor_availability import DoctorAvailability  # noqa: F401
 from app.models.specialty import Specialty  # noqa: F401
 from app.models.prescription import Prescription, PrescriptionItem
 from app.models.audit_log import AuditLog
+from app.models.ai_chat import AIConversation, AIMessage, KnowledgeDocument, DocumentChunk  # noqa: F401
+from app.models.appointment import Appointment 

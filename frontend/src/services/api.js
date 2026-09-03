@@ -70,6 +70,17 @@ export const getAdminAppointments = (params) => {
 export const getAdminAnalytics = () => apiGet("/admin/analytics");
 export const getAuditLogs = () => apiGet("/admin/audit-logs");
 
+// ── AI Symptom Checker ──
+export const sendChatMessage = (message, conversationId = null) =>
+  apiPost("/ai-chat", {
+    message,
+    ...(conversationId ? { conversation_id: conversationId } : {}),
+  });
+
+export const listConversations = () => apiGet("/ai-chat/conversations");
+
+export const getConversation = (id) => apiGet(`/ai-chat/conversations/${id}`);
+
 
 
 
