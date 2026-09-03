@@ -37,7 +37,7 @@ export default function AppointmentCard({ appointment, role, onUpdated, onError 
       <strong>{when}</strong>{" "}
       <StatusBadge status={appointment.status} />
       <p>
-        <b>{appointment.patient_name}</b>
+        <b>{appointment.patient_name || "Patient"}</b>
         {appointment.patient_age != null && <> · {appointment.patient_age} yrs</>}
         {appointment.patient_blood_group && <> · Blood group: {appointment.patient_blood_group}</>}
       </p>
@@ -45,11 +45,30 @@ export default function AppointmentCard({ appointment, role, onUpdated, onError 
       {appointment.reason_text && <p className="appt-reason">“{appointment.reason_text}”</p>}
       <p className="appt-ref">Ref: {appointment.reference_number}</p>
 
-      {(NEXT_ACTIONS[appointment.status] || []).map((a) => (
+      {/* --- NEW: JITSI VIDEO CALL BUTTON --- */}
+      {appointment.status === 'IN_CONSULTATION' && appointment.meeting_link && (
+        <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+          <a
+            href={appointment.meeting_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+            style={{ backgroundColor: "#2563eb", color: "white", textDecoration: "none", display: "inline-block" }}
+          >
+            🎥 Join Video Call
+          </a>
+        </div>
+      )}
+      {/* ------------------------------------ */}
+
+      {/* --- DOCTOR ONLY: Status transition buttons --- */}
+      {role === "doctor" && (NEXT_ACTIONS[appointment.status] || []).map((a) => (
         <button key={a.next} onClick={() => handleAction(a.next)} className="btn">
           {a.label}
         </button>
       ))}
+
+      {/* Both Doctor and Patient can cancel early appointments */}
       {CAN_CANCEL.includes(appointment.status) && (
         <button onClick={() => handleAction("CANCELLED")} className="btn btn-danger">
           Cancel

@@ -23,6 +23,9 @@ class Appointment(Base):
     reason_text = Column(Text, nullable=True)
     booked_at = Column(DateTime, default=datetime.utcnow)
     reference_number = Column(String(20), unique=True, nullable=False, index=True)
+    
+    # NEW COLUMN ADDED HERE
+    meeting_link = Column(String, nullable=True)
 
     patient = relationship("User", foreign_keys=[patient_id])
     doctor = relationship("User", foreign_keys=[doctor_id])

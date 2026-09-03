@@ -20,6 +20,8 @@ class AppointmentOut(AppointmentBase):
     status: AppointmentStatus
     reference_number: str
     booked_at: datetime
+    # NEW FIELD
+    meeting_link: Optional[str] = None
 
     class Config:
         from_attributes = True
@@ -38,6 +40,8 @@ class DoctorAppointmentOut(BaseModel):
     reason_text: Optional[str] = None
     reference_number: str
     booked_at: datetime
+    # NEW FIELD
+    meeting_link: Optional[str] = None
 
     class Config:
         from_attributes = True

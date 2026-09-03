@@ -7,7 +7,7 @@ status transitions. Routers stay thin — all rules live here.
 The transition map is the single source of truth for which status
 changes a doctor may perform; anything not listed here is rejected.
 """
-
+import uuid  # <-- NEW IMPORT
 from datetime import datetime, date, time
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -115,6 +115,14 @@ def update_status(
                 f"Illegal transition: {appt.status.value} → {new_status.value}"
             )
 
+    # --- NEW JITSI LINK GENERATION ---
+    if new_status == AppointmentStatus.IN_CONSULTATION and not appt.meeting_link:
+        unique_hash = uuid.uuid4().hex[:8]
+        
+        # Changed from meet.jit.si to a truly anonymous public instance
+        appt.meeting_link = f"https://meet.ffmuc.net/Consultation-{appt.reference_number}-{unique_hash}"
+    # ---------------------------------
+
     appt.status = new_status
     db.commit()
     db.refresh(appt)
@@ -164,7 +172,9 @@ def _serialize(appt: Appointment, user: User, profile: PatientProfile | None) ->
         "reason_text": appt.reason_text,
         "reference_number": appt.reference_number,
         "booked_at": appt.booked_at,
+        "meeting_link": appt.meeting_link,  # <-- NEW FIELD ADDED HERE
     }
+
 def get_patients(db: Session, doctor_id: int) -> list[dict]:
     """Distinct patients who have at least one appointment with this doctor."""
     rows = (
