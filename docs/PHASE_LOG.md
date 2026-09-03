@@ -196,3 +196,46 @@ list, and availability CRUD reflected in the patient slot picker.
   Analytics, Users, Doctors, Audit Logs
 - Backend: app/routers/admin.py
 - Frontend: src/pages/AdminDashboard.jsx, src/components/AdminRoute.jsx
+
+## Phase 9 — AI Symptom Checker + Find-a-Doctor Integration ✅
+
+**Goal:** an AI triage assistant grounded in a curated knowledge base, with
+hard safety guarantees and full integration into doctor discovery + booking.
+
+### Backend
+- `ai_conversations` + `ai_chat_messages` tables (per-patient, titled
+  conversations; Alembic migration)
+- Medical knowledge-base table with pgvector embedding column; seed script
+  populates curated chunks (emergency signs, common conditions per specialty)
+- `ai_chat_service.py`:
+  - greeting detection (short pleasantries → friendly reply, no triage/LLM waste)
+  - RAG: embed message → cosine top-k KB chunks → strict grounded prompt
+  - Groq call → JSON parsed into `TriageResponse` (Pydantic-validated;
+    specialty constrained to the 5 platform specialties or None; invalid
+    output triggers one retry, then graceful fallback)
+  - dual red-flag safety: regex pre-check (fast path, no LLM) + post-check
+    that can only ESCALATE urgency; emergency responses are hardcoded,
+    never LLM-generated
+  - conversation persistence, history, ownership scoping (`404` on
+    foreign conversation ids)
+- Router: `POST /ai-chat`, `GET /ai-chat/conversations`,
+  `GET /ai-chat/conversations/{id}`; doctor-suggestion engine
+  (recommended specialty → General Medicine → any approved, rating-ranked,
+  emergencies excluded — ER, not booking)
+
+### Frontend
+- `SymptomChecker.jsx`: chat UI with bubbles, urgency color banner
+  (🚨🟠🔵🟢), suggested-doctor cards deep-linked to `/doctor/:id`
+  (booking flow), sidebar conversation list + history restore, disclaimer
+
+### Bugs found & fixed during integration (worth remembering)
+- Duplicate `send_message` route definition shadowed the intended one
+- Pydantic validators crashed on `None` specialty (greeting path) — added
+  `None` guards; made `recommended_specialty` optional in **both**
+  `TriageResponse` and `ChatResponse`
+- Suggested-doctor `id` was `user_id` but `/doctor/:id` expects profile id —
+  added `doctor_profile_id` to `SuggestedDoctor`, navigation fixed
+
+### Status
+All golden flows pass: greeting, rash → Dermatology + cards → correct
+doctor → booking, chest pain → emergency, history restore.
