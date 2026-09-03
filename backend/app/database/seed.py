@@ -7,14 +7,13 @@ Usage:
 Creates:
 - 1 admin account
 - Starter specialties
-- 5 approved sample doctors with recurring availability
-- 3 sample patients
+- Expanded approved sample doctors with recurring availability (Morning & Evening shifts)
+- Expanded sample patients with profile demographics (Age, Blood Group, Phone)
 
 Safe to re-run: skips anything that already exists.
 """
 
-from datetime import time
-
+from datetime import time, date
 from app.core.security import hash_password
 from app.database.base import Base
 from app.database.session import SessionLocal, engine
@@ -40,66 +39,108 @@ SAMPLE_PASSWORD = "ChangeMe123!"
 SAMPLE_DOCTORS = [
     {
         "email": "dr.asha@telemedicine.local",
-        "full_name": "Asha Rao",
+        "full_name": "Dr. Asha Rao",
         "specialty": "General Medicine",
         "qualification": "MBBS, MD",
         "years_experience": 12,
-        "clinic_address": "Wellness Clinic, Main Road",
+        "clinic_address": "Wellness Clinic, Main Road, Block A",
         "consultation_fee": 600,
-        "bio": "Primary care physician focused on preventive health.",
+        "bio": "Primary care physician focused on preventive health, lifestyle disorders, and general wellness.",
+        "shift": "morning", # 09:00 - 13:00
     },
     {
         "email": "dr.vikram@telemedicine.local",
-        "full_name": "Vikram Mehta",
+        "full_name": "Dr. Vikram Mehta",
         "specialty": "Cardiology",
         "qualification": "MBBS, DM Cardiology",
         "years_experience": 15,
-        "clinic_address": "Heart Care Centre",
-        "consultation_fee": 1000,
-        "bio": "Cardiologist for hypertension, chest discomfort, and follow-ups.",
+        "clinic_address": "Heart Care Centre, City Hospital Complex",
+        "consultation_fee": 1200,
+        "bio": "Senior cardiologist specializing in hypertension, arrhythmias, and post-infarction care.",
+        "shift": "evening", # 16:00 - 20:00
     },
     {
         "email": "dr.neha@telemedicine.local",
-        "full_name": "Neha Kapoor",
+        "full_name": "Dr. Neha Kapoor",
         "specialty": "Dermatology",
         "qualification": "MBBS, DDVL",
         "years_experience": 9,
-        "clinic_address": "Skin Health Studio",
-        "consultation_fee": 750,
-        "bio": "Dermatology care for skin, hair, and nail concerns.",
+        "clinic_address": "Skin Health Studio, Central Avenue",
+        "consultation_fee": 800,
+        "bio": "Expert dermatological care for chronic eczema, acne management, and cosmetic concerns.",
+        "shift": "morning",
     },
     {
         "email": "dr.arjun@telemedicine.local",
-        "full_name": "Arjun Nair",
+        "full_name": "Dr. Arjun Nair",
         "specialty": "Pediatrics",
         "qualification": "MBBS, DCH",
         "years_experience": 11,
-        "clinic_address": "Child Care Clinic",
+        "clinic_address": "Child Care Clinic, Sunshine Street",
         "consultation_fee": 650,
-        "bio": "Pediatrician for routine and urgent child health concerns.",
+        "bio": "Dedicated pediatrician providing routine vaccinations, neonatal care, and child wellness evaluations.",
+        "shift": "morning",
     },
     {
         "email": "dr.meera@telemedicine.local",
-        "full_name": "Meera Iyer",
+        "full_name": "Dr. Meera Iyer",
         "specialty": "Orthopedics",
         "qualification": "MBBS, MS Ortho",
         "years_experience": 14,
-        "clinic_address": "Mobility Orthopedic Centre",
-        "consultation_fee": 900,
-        "bio": "Orthopedic care for bones, joints, and sports injuries.",
+        "clinic_address": "Mobility Orthopedic Centre, Ring Road",
+        "consultation_fee": 1000,
+        "bio": "Orthopedic surgeon specializing in joint replacements, sports injuries, and spinal alignment.",
+        "shift": "evening",
+    },
+    {
+        "email": "dr.rohit@telemedicine.local",
+        "full_name": "Dr. Rohit Verma",
+        "specialty": "General Medicine",
+        "qualification": "MBBS, MRCP (UK)",
+        "years_experience": 8,
+        "clinic_address": "City MediCare, Sector 4",
+        "consultation_fee": 700,
+        "bio": "Focuses on acute infections, metabolic syndromes, and chronic illness management.",
+        "shift": "evening",
     },
 ]
 
 SAMPLE_PATIENTS = [
-    ("patient.one@telemedicine.local", "Patient One"),
-    ("patient.two@telemedicine.local", "Patient Two"),
-    ("patient.three@telemedicine.local", "Patient Three"),
+    {
+        "email": "patient.one@telemedicine.local",
+        "full_name": "Rahul Sharma",
+        "dob": date(1995, 4, 12),
+        "blood_group": "O+",
+        "phone": "+919876543210"
+    },
+    {
+        "email": "patient.two@telemedicine.local",
+        "full_name": "Priya Sen",
+        "dob": date(1998, 9, 24),
+        "blood_group": "B+",
+        "phone": "+919876543211"
+    },
+    {
+        "email": "patient.three@telemedicine.local",
+        "full_name": "Amit Chatterjee",
+        "dob": date(1985, 2, 15),
+        "blood_group": "A+",
+        "phone": "+919876543212"
+    },
+    {
+        "email": "patient.four@telemedicine.local",
+        "full_name": "Sneha Mukherjee",
+        "dob": date(2001, 11, 5),
+        "blood_group": "AB+",
+        "phone": "+919876543213"
+    },
 ]
 
 
 def seed() -> None:
     db = SessionLocal()
     try:
+        # 1. Admin seeding
         if not db.query(User).filter(User.email == ADMIN_EMAIL).first():
             admin = User(
                 email=ADMIN_EMAIL,
@@ -113,6 +154,7 @@ def seed() -> None:
         else:
             print("Admin already exists, skipping.")
 
+        # 2. Specialties seeding
         for name, description in SPECIALTIES:
             if not db.query(Specialty).filter(Specialty.name == name).first():
                 db.add(Specialty(name=name, description=description, is_active=True))
@@ -121,6 +163,7 @@ def seed() -> None:
         db.commit()
         specialties = {specialty.name: specialty for specialty in db.query(Specialty).all()}
 
+        # 3. Doctors seeding
         for doctor_data in SAMPLE_DOCTORS:
             user = db.query(User).filter(User.email == doctor_data["email"]).first()
             if not user:
@@ -156,35 +199,47 @@ def seed() -> None:
                 db.query(DoctorAvailability).filter(DoctorAvailability.doctor_id == profile.id).first()
             )
             if not existing_availability:
-                for day_of_week in range(0, 5):
+                start_t = time(9, 0) if doctor_data["shift"] == "morning" else time(16, 0)
+                end_t = time(13, 0) if doctor_data["shift"] == "morning" else time(20, 0)
+
+                for day_of_week in range(0, 5):  # Monday to Friday
                     db.add(
                         DoctorAvailability(
                             doctor_id=profile.id,
                             day_of_week=day_of_week,
-                            start_time=time(9, 0),
-                            end_time=time(12, 0),
+                            start_time=start_t,
+                            end_time=end_t,
                             is_recurring=True,
                             is_holiday=False,
                         )
                     )
-                print(f"Created weekday availability for {doctor_data['full_name']}")
+                print(f"Created {doctor_data['shift']} shift availability for {doctor_data['full_name']}")
 
-        for email, full_name in SAMPLE_PATIENTS:
-            user = db.query(User).filter(User.email == email).first()
+        # 4. Patients seeding
+        for patient_data in SAMPLE_PATIENTS:
+            user = db.query(User).filter(User.email == patient_data["email"]).first()
             if not user:
                 user = User(
-                    email=email,
+                    email=patient_data["email"],
                     password_hash=hash_password(SAMPLE_PASSWORD),
                     role=UserRole.patient,
-                    full_name=full_name,
+                    full_name=patient_data["full_name"],
+                    phone=patient_data["phone"],
                     is_active=True,
                 )
                 db.add(user)
                 db.flush()
-                db.add(PatientProfile(user_id=user.id))
-                print(f"Created sample patient: {email} / {SAMPLE_PASSWORD}")
+                db.add(
+                    PatientProfile(
+                        user_id=user.id,
+                        date_of_birth=patient_data["dob"],
+                        blood_group=patient_data["blood_group"]
+                    )
+                )
+                print(f"Created sample patient: {patient_data['email']} / {SAMPLE_PASSWORD}")
 
         db.commit()
+        print("Database seed completed successfully!")
     finally:
         db.close()
 
