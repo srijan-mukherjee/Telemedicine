@@ -1,0 +1,78 @@
+/* Landing page styles.
+ *
+ * Tailwind v4 theme + utilities ONLY — preflight is intentionally skipped
+ * so the existing app's element styles (global.css) are unaffected.
+ * The .landing-root rules below reproduce the small slice of preflight
+ * the landing design relies on (zeroed heading/paragraph margins,
+ * unstyled buttons, block images), scoped so nothing else changes.
+ */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+/* Shared cinema/login design tokens (dark navy theme). Declared here —
+   alongside the Tailwind imports — so utilities like bg-background and
+   text-muted-foreground are generated for any page that uses them. */
+@theme {
+  --color-background: hsl(201 100% 13%);
+  --color-foreground: hsl(0 0% 100%);
+  --color-muted-foreground: hsl(240 4% 66%);
+  --color-primary: hsl(0 0% 100%);
+  --color-primary-foreground: hsl(0 0% 4%);
+  --color-secondary: hsl(0 0% 10%);
+  --color-muted: hsl(0 0% 10%);
+  --color-accent: hsl(0 0% 10%);
+  --color-border: hsl(0 0% 18%);
+  --color-input: hsl(0 0% 18%);
+
+  --font-display: "Instrument Serif", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+.landing-root :where(h1, h2, h3, h4, p) {
+  margin: 0;
+}
+
+.landing-root :where(button) {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.landing-root :where(img) {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Landing entrance / motion helpers (scoped by class name) ── */
+@keyframes landing-drop {
+  from { opacity: 0; transform: translateY(-100%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes landing-zoom {
+  from { transform: scale(1.1); }
+  to { transform: scale(1); }
+}
+
+@keyframes landing-menu-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar slides down on page load */
+.landing-nav-in {
+  animation: landing-drop 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Hero photo gently settles on page load */
+.landing-kenburns {
+  animation: landing-zoom 8s ease-out both;
+}
+
+/* Mobile menu fades/slides open */
+.landing-menu-in {
+  animation: landing-menu-in 220ms ease both;
+}
