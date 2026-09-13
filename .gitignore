@@ -24,3 +24,8 @@ wheels/
 venv/
 .venv/
 backend/.env
+
+# JavaScript dependencies and generated build/cache output
+frontend/node_modules/
+frontend/.npm-cache/
+frontend/dist/
