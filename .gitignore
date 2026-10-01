@@ -19,7 +19,7 @@ wheels/
 .installed.cfg
 *.egg
 .env
-backend/seed.py
+backend/database/seed.py
 
 # Virtual environments
 venv/
